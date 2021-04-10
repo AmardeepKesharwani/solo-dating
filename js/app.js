@@ -190,6 +190,11 @@ $(document).ready(function () {
             }, 1000)
         }
     })
+    $("#msg").keyup(function(e){
+        if(e.key == 'Enter') {
+            $(".msg-send-btn").click()
+        }
+    })
 })
 const hello = ["hello", "hi", "hii", "hy"];
 const bye = ["bye", "by", "gm", "gn"];
