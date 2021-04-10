@@ -26,6 +26,7 @@ button {
   outline: none;
   border: none;
   display: inline-block;
+  cursor: pointer;
 }
 img {
   width: 100%;
@@ -57,10 +58,12 @@ ul {
 }
 .nav {
   top: 0;
+  cursor: auto;
 }
 .material-icons {
   font-size: 26px;
   transition: 300ms ease;
+  cursor: pointer;
 }
 .nav .material-icons:hover {
   color: var(--primary);
@@ -128,7 +131,7 @@ section {
   display: block;
   animation: fadeIn 500ms ease;
 }
-@keyframs fadeIn {
+@keyframes fadeIn {
   0% {
     opacity: 0;
   }
@@ -164,6 +167,7 @@ section {
   border-radius: 5px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  cursor: pointer;
 }
 .list-bg {
   height: 180px;
@@ -217,6 +221,7 @@ section {
   font-size: 30px;
   margin: 0 20px;
   color: #fff;
+  cursor: pointer;
 }
 .action .fav {
   transform: translateY(-30px);
@@ -255,6 +260,7 @@ section {
   background: #fff;
   padding: 5px;
   color: #333;
+  cursor: pointer;
 }
 .img {
   width: 70px;
@@ -359,6 +365,7 @@ section {
   font-size: 25px;
   background: var(--primary);
   padding: 5px;
+  cursor: pointer;
 }
 .msg-send-btn:hover .material-icons {
   color: #fff !important;
@@ -372,7 +379,12 @@ section {
   display: none;
 }
 .chat-list {
-  cursor: none;
+  max-width: 420px;
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .chat-list li {
   font-size: 15px;
